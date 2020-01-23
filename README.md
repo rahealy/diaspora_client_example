@@ -11,6 +11,12 @@ Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspor
 **Day One Design Goals:**
 
 * Credentials / Login
+  * Update 13:14 - Finding out that things work way differently than what I assumed from the pieces of documentation read thus far. Things of note:
+   * Client will need to connect to the specific pod using the API
+   * Client will use OpenID + oauth.
+   * API is not web based yet. Not sure how this reconciles with the fact that the API docs use https/url conventions.
+   * If a pod does not use HTTPS what port(s) are used for the protocol?
+  
 * Display first page of recent posts.
 * Load additional pages of recent posts.
 
