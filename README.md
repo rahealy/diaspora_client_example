@@ -5,15 +5,14 @@ Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspor
 
 **Goals:**
 
-Day 1: Client that authenticates and shows posts.
+* Day 1: Client that authenticates and shows posts.
+* Day 2: Filtering posts.
 
-Day 2: Filtering posts.
+**Day One Design Goals:**
 
-Day One Design Goals:
-
-Credentials / Login
-Display first page of recent posts.
-Load additional pages of recent posts.
+* Credentials / Login
+* Display first page of recent posts.
+* Load additional pages of recent posts.
 
 **Rectangles:**
 
