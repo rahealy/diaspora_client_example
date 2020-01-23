@@ -22,7 +22,7 @@ Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspor
       * Example - https://example.com/nodeinfo/2.0
   * Update 14:02 - OpenID uses NodeInfo-like scheme to get information about the OpenID implementation
     * https://example.com/.well-known/openid-configuration
-  * Update 14:22 - Client requests a connection using:
+  * Update 14:22 - Client requests a connection using OpenID "Client Registration Request":
     * POST http://example.com/api/openid_connect/clients
 * Display first page of recent posts.
 * Load additional pages of recent posts.
