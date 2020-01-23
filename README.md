@@ -16,7 +16,10 @@ Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspor
     * Client will use OpenID + oauth.
     * API is not web based yet. Not sure how this reconciles with the fact that the API docs use https/url conventions.
     * If a pod does not use HTTPS what port(s) are used for the protocol?
-  
+  * Update 13:41 - NodeInfo is a protocol that servers can use to broadcast JSON formatted info about themselves.
+    * https://example.com/.well-known/nodeinfo
+      * Provides general information + urls for specifcs.
+      * Example - https://example.com/nodeinfo/2.0
 * Display first page of recent posts.
 * Load additional pages of recent posts.
 
