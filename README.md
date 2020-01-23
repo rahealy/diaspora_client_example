@@ -3,8 +3,10 @@ A basic example of a QML based client for connecting to the diaspora social netw
 
 Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspora API the author decided as a personal challenge to see how much of a simple client could be written using QTQuick and QML in the span of 1 day, 2 days, and so on.
 
-Goals:
+**Goals:**
+
 Day 1: Client that authenticates and shows posts.
+
 Day 2: Filtering posts.
 
 Day One Design Goals:
