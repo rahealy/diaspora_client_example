@@ -24,6 +24,7 @@ Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspor
     * https://example.com/.well-known/openid-configuration
   * Update 14:22 - Client requests a connection using OpenID "Client Registration Request":
     * POST http://example.com/api/openid_connect/clients
+  * Update 18:04 - Stalled on OpenID dev pending access to a *diaspora test environment. Done installing and configuring QtCreator, Android SDK, Android NDK and hopefully all the dependencies. Whew. Beginning UI dev via QtQuick mobile scrolling application.
 * Display first page of recent posts.
 * Load additional pages of recent posts.
 
