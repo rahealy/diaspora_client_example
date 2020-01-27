@@ -3,10 +3,24 @@ A basic example of a QML based client for connecting to the diaspora social netw
 
 Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspora API the author decided as a personal challenge to see how much of a simple client could be written using QTQuick and QML in the span of 1 day, 2 days, and so on.
 
-**Goals:**
+Day 2.5 Screenshot:
 
-* Day 1: Client that authenticates and shows posts.
-* Day 2: Filtering posts.
+<img src="diapsora_client_example.jpg" alt="image of diaspora client example ui." height="521" width="369"/>
+
+
+**Day Three Design Goals:**
+ * Install and configure diaspora development server
+   * Update - 09:30-ish Installed VirtualBox. Seems to work.
+   * Update - 10:27 Ubuntu Server 18.04.3 LTS installed and updated. Beginning diaspora + dependencies install and configuration.
+ * Implement client credentials / login in javascript.
+
+
+**Day Two Design Goals:**
+ * UI - work on modules related to displaying posts.
+ * Update day 2.5 - basic posts UI written. Things of note:
+   * Posts are limited to author, avatar, post title, date and topic, and body.
+   * Had difficulties getting desired margins. Resorted to using transparent rectangles.
+   * 
 
 **Day One Design Goals:**
 
@@ -31,6 +45,14 @@ Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspor
   * Display first page of recent posts.
   * Load additional pages of recent posts.
 
+
+**Prior Errata**
+
+**Goals:**
+
+* Day 1: Client that authenticates and shows posts.
+* Day 2: Filtering posts.
+
 **Rectangles:**
 
 Top Level Rectangle
@@ -46,4 +68,3 @@ VScroll Rectangle
    * Name / Date
    * Post Contents
    
-Day 2 Goals TBD
