@@ -12,6 +12,7 @@ Day 2.5 Screenshot:
  * Install and configure diaspora development server
    * Update - 09:30-ish Installed VirtualBox. Seems to work.
    * Update - 10:27 Ubuntu Server 18.04.3 LTS installed and updated. Beginning diaspora + dependencies install and configuration.
+   * Update - 12:32 No diaspora yet. Learning how to use netplan (why ipfup/down wasn't good enough, no idea) and configure an interface for ssh-ing to server.
  * Implement client credentials / login in javascript.
 
 
