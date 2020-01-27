@@ -5,5 +5,6 @@
         <file>Settings.qml</file>
         <file>Posts.qml</file>
         <file>PostList.qml</file>
+        <file>Post.qml</file>
     </qresource>
 </RCC>
