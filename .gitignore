@@ -71,3 +71,5 @@ Thumbs.db
 *.dll
 *.exe
 
+# Development directories not meant for git
+**/dev

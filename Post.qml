@@ -29,7 +29,7 @@ Page {
 
                 Text {
                     id: authorNameLabel
-                    text: author_name
+                    text: author_name //provided by postListComponent in PostList.qml
                     elide: Label.ElideRight
                 }
 
@@ -73,7 +73,7 @@ Page {
                            (postPage.m_SPACING * 3) - 1
                     elide: Label.ElideRight
                     font.bold: true
-                    text: created_at
+                    text: created_at //provided by postListComponent in PostList.qml
                 }
 
                 Text {
@@ -85,7 +85,7 @@ Page {
                     height: titleColumn.height - createdAtLabel.height
                     elide: Label.ElideRight
                     wrapMode: Text.WordWrap
-                    text: post_title
+                    text: post_title //provided by postListComponent in PostList.qml
                 }
             }
 
@@ -108,7 +108,7 @@ Page {
             //height: 20
             elide: Label.ElideRight
             wrapMode: Text.WordWrap
-            text: post_body
+            text: post_body //provided by postListComponent in PostList.qml
         }
 
         Rectangle { //Spacer for bottom of text.

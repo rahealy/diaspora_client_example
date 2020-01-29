@@ -2,9 +2,10 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>Settings.qml</file>
-        <file>Posts.qml</file>
+        <file>SettingList.qml</file>
         <file>PostList.qml</file>
         <file>Post.qml</file>
+        <file>Setting.qml</file>
+        <file>diaspora_api.js</file>
     </qresource>
 </RCC>
