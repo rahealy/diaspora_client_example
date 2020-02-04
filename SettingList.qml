@@ -18,9 +18,9 @@ Item {
 
         ListElement {
             id: settingListElement
-            property string id: str_default()
             property string name: str_default()
             property string value: str_default()
+            property string tooltip: str_default()
         }
     }
 
@@ -54,9 +54,22 @@ Item {
         }
     }
 
-    function add_setting(name, value) {
+    function get_setting(name) {
+        var i;
+        for(i = 0; i < model.count; ++i) {
+            var item = model.get(i);
+            if (item.name === name) {
+                return item.value;
+            }
+        }
+        return undefined;
+    }
+
+    function add_setting(name, value, tooltip) {
         var nd = settingListComponent.createObject (
-            settingList.model, {name: name, value: value}
+            settingList.model, {name: name,
+                                value: value,
+                                tooltip: tooltip}
         );
         settingList.model.append(nd);
     }

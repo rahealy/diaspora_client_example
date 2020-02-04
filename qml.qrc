@@ -7,5 +7,7 @@
         <file>Post.qml</file>
         <file>Setting.qml</file>
         <file>diaspora_api.js</file>
+        <file>DiasporaClientExample.qml</file>
+        <file>Connect.qml</file>
     </qresource>
 </RCC>

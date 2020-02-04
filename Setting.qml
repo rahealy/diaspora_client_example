@@ -9,6 +9,11 @@ Row {
     readonly property int m_SPACING: 5
     readonly property int m_MARGINS: 5
 
+    ToolTip.text: qsTr(tooltip)
+    ToolTip.delay: 1000
+    ToolTip.timeout: 5000
+    ToolTip.visible: hovered
+
     Text {
         id: nameText
         text: name  //provided by settingListComponent in SettingList.qml
