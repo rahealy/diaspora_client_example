@@ -12,9 +12,9 @@ Help is definitely appreciated!
 
 Various screenshots:
 
-<img src="diapsora_client_example_posts.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
-<img src="diapsora_client_example_settings.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
-<img src="diapsora_client_example_connect.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
+<img src="diaspora_client_example_posts.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
+<img src="diaspora_client_example_settings.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
+<img src="diaspora_client_example_connect.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
 
 
 Older:
