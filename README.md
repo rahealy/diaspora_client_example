@@ -15,8 +15,6 @@ Various screenshots:
 <img src="diapsora_client_example_posts.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
 <img src="diapsora_client_example_settings.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
 <img src="diapsora_client_example_connect.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
-<img src="diapsora_client_example_authorize.jpg" alt="image of diaspora client example ui." height="707" width="535"/>
-
 
 
 Older:
