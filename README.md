@@ -3,6 +3,25 @@ A basic example of a QML based client for connecting to the diaspora social netw
 
 Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspora API the author decided as a personal challenge to see how much of a simple client could be written using QTQuick and QML in the span of 1 day, 2 days, and so on.
 
+
+Tuesday February 4, 2020 (Current) - Some job applications, a few responses and one rejection have come and gone. My *diaspora client example is still stalled on getting OAuth to grant me an access token. If you’re interested you can find the gory details here.
+
+[](https://discourse.diasporafoundation.org/t/oauth-getting-access-token/3003)
+
+Help is definitely appreciated!
+
+Various screenshots:
+
+<img src="diapsora_client_example_posts.jpg" alt="image of diaspora client example ui." height="385" width="553"/>
+<img src="diapsora_client_example_settings.jpg" alt="image of diaspora client example ui." height="385" width="553"/>
+<img src="diapsora_client_example_connect.jpg" alt="image of diaspora client example ui." height="385" width="553"/>
+<img src="diapsora_client_example_authorize.jpg" alt="image of diaspora client example ui." height="707" width="535"/>
+<img src="diapsora_client_example_authorized.jpg" alt="image of diaspora client example ui." height="707" width="535"/>
+
+
+
+Older:
+
 Day 2.5 Screenshot:
 
 <img src="diapsora_client_example.jpg" alt="image of diaspora client example ui." height="521" width="369"/>
