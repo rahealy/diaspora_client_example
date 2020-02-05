@@ -6,7 +6,7 @@ Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspor
 
 Tuesday February 4, 2020 (Current) - Some job applications, a few responses and one rejection have come and gone. My *diaspora client example is still stalled on getting OAuth to grant me an access token. If you’re interested you can find the gory details here.
 
-[](https://discourse.diasporafoundation.org/t/oauth-getting-access-token/3003)
+[https://discourse.diasporafoundation.org/t/oauth-getting-access-token/3003](https://discourse.diasporafoundation.org/t/oauth-getting-access-token/3003)
 
 Help is definitely appreciated!
 
