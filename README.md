@@ -1,43 +1,79 @@
 # diaspora_client_example
-A basic example of a QML based client for connecting to the diaspora social network.
 
-Thursday January 23, 2020 - With the release of the new HTTPS/JSON based diaspora API the author decided as a personal challenge to see how much of a simple client could be written using QTQuick and QML in the span of 1 day, 2 days, and so on.
+**Thursday January 23, 2020** - With the release of the new HTTPS/JSON based diaspora API as a personal challenge I decided to see how much of a simple client could be written using QTQuick and QML in the span of 1 day, 2 days, and so on. 
 
+### What This Is:
 
-Tuesday February 4, 2020 (Current) - Some job applications, a few responses and one rejection have come and gone. My *diaspora client example is still stalled on getting OAuth to grant me an access token. If you’re interested you can find the gory details here.
+A Qt multi platform example written in C++/QML/JavaScript that hopefully will be useful for those trying to make sense of the OpenID + OAuth specifications, accessing a diaspora pod using the diaspora API, and as code demo.
 
-[https://discourse.diasporafoundation.org/t/oauth-getting-access-token/3003](https://discourse.diasporafoundation.org/t/oauth-getting-access-token/3003)
-
-Help is definitely appreciated!
-
-Various screenshots:
-
-<img src="diaspora_client_example_posts.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
-<img src="diaspora_client_example_settings.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
-<img src="diaspora_client_example_connect.jpg" alt="image of diaspora client example ui." height="553" width="385"/>
+IMPORTANT: This client example is intended for use as a test of the Diaspora API. It does NOT implement certain OpenID security measures. It does not require encrypted (https) endpoints. DO NOT USE THIS CODE IN PRODUCTION.
 
 
-Older:
+### What This Isn't:
 
-Day 2.5 Screenshot:
+A full fledged library and/or application and/or secure. While it definitely has potential, unless people show interest I'm probably going to turn to other projects.
+
+
+### Current
+
+**Thursday February 7, 2020 (Current)** - A few days turned into many days but here's a reasonably working example that meets most of my original goals. I'll call it an alpha release.
+
+
+### References
+
+* **Diaspora**
+  * API: https://diaspora.github.io/api-documentation/index.html
+  * Communications: https://discourse.diasporafoundation.org/
+  * Installation Guide: https://wiki.diasporafoundation.org/Installation
+
+* **OAuth Tutorials**
+  * https://aaronparecki.com/oauth-2-simplified/
+  * http://tutorials.jenkov.com/oauth2/index.html
+
+* **Other**
+  * JWT: https://tools.ietf.org/html/rfc7519
+  * NodeInfo: https://nodeinfo.diaspora.software/protocol.html
+  * Webfinger: https://tools.ietf.org/html/rfc7033
+  * /.well-known/: https://tools.ietf.org/html/rfc5785
+  * Qt Download: https://www.qt.io/download-open-source
+
+
+### Build Notes
+
+**Diaspora Server**
+
+I installed Ubuntu Server on a VirtualBox virtual machine then followed the official instructions. Don't forget to enable port forwarding in the Network section of the VM Settings.
+
+The diaspora installation instructions are straightforward and everything went off without a hitch.
+
+
+**Qt**
+
+Rather than fuss around with a bunch of system dependencies I installed Qt from the online installer. I used Qt Creator to write and design most of the code.
+
+
+### Requisite Screenshot
 
 <img src="diapsora_client_example.jpg" alt="image of diaspora client example ui." height="521" width="369"/>
 
 
-**Day Three Design Goals:**
- * Install and configure diaspora development server
-   * Update - 09:30-ish Installed VirtualBox. Seems to work.
-   * Update - 10:27 Ubuntu Server 18.04.3 LTS installed and updated. Beginning diaspora + dependencies install and configuration.
-   * Update - 12:32 No diaspora yet. Learning how to use netplan (why ipfup/down wasn't good enough, no idea) and configure an interface for ssh-ing to server.
- * Implement client credentials / login in javascript.
+### Older
+
+**Day Three Design Goals**
+
+* Install and configure diaspora development server
+  * Update - 09:30-ish Installed VirtualBox. Seems to work.
+  * Update - 10:27 Ubuntu Server 18.04.3 LTS installed and updated. Beginning diaspora + dependencies install and configuration.
+  * Update - 12:32 No diaspora yet. Learning how to use netplan (why ipfup/down wasn't good enough, no idea) and configure an interface for ssh-ing to server.
+  * Implement client credentials / login in javascript.
 
 
 **Day Two Design Goals:**
- * UI - work on modules related to displaying posts.
- * Update day 2.5 - basic posts UI written. Things of note:
-   * Posts are limited to author, avatar, post title, date and topic, and body.
-   * Had difficulties getting desired margins. Resorted to using transparent rectangles.
-   * 
+
+* UI - work on modules related to displaying posts.
+* Update day 2.5 - basic posts UI written. Things of note:
+* Posts are limited to author, avatar, post title, date and topic, and body.
+* Had difficulties getting desired margins. Resorted to using transparent rectangles.
 
 **Day One Design Goals:**
 
@@ -62,26 +98,3 @@ Day 2.5 Screenshot:
   * Display first page of recent posts.
   * Load additional pages of recent posts.
 
-
-**Prior Errata**
-
-**Goals:**
-
-* Day 1: Client that authenticates and shows posts.
-* Day 2: Filtering posts.
-
-**Rectangles:**
-
-Top Level Rectangle
- * Refresh Button
-
-Setup Rectangle
- * username/password
- * Sign In button.
- * Log Out button.
- 
-VScroll Rectangle
- * Post Window
-   * Name / Date
-   * Post Contents
-   
