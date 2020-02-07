@@ -11,6 +11,8 @@ Item {
 
     property var model: ListModel{}
 
+    signal refreshPosts();
+
     function str_default() {
         return 'unknown';
     }
@@ -65,7 +67,7 @@ Item {
         }
     }
 
-    function add_post(post) {
+    function add_post(post, user) {
         var nd = postListComponent.createObject (
             postList.model,
             {
@@ -73,6 +75,9 @@ Item {
                 created_at: post.created_at,
                 post_title: post.title,
                 post_body: post.body,
+                author_name: post.author.name,
+                author_guid: post.author.guid,
+                author_avatar: ('avatar' in post.author) ? post.author.avatar : '',
             }
         );
         postList.model.append(nd);
@@ -81,39 +86,33 @@ Item {
     Component.onCompleted: {
 //Example provided by API documentation:
 //https://diaspora.github.io/api-documentation/routes/posts.html
-        const json_example_post_text = '' +
-            '{' +
-              '"guid": "83d406e0b9b20133e40c406c8f31e210",' +
-              '"created_at": "2016-02-20T03:46:57.955Z",' +
-              '"post_type": "StatusMessage",' +
-              '"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a di.",' +
-              '"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.",' +
-              '"provider_display_name": "ExampleApp",' +
-              '"public": true,' +
-              '"nsfw": false,' +
-              '"author": {' +
-                '"guid": "f50ffc00b188013355e3705681972339",' +
-                '"diaspora_id": "alice@example.com",' +
-                '"name": "Alice Testing",' +
-                '"avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"' +
-              '},' +
-              '"interaction_counters": {' +
-                '"comments": 14,' +
-                '"likes": 42,' +
-                '"reshares": 9' +
-              '}' +
-            '}';
-        var example_post = JSON.parse(json_example_post_text);
-        var i;
+//        const json_example_post_text = '' +
+//            '{' +
+//              '"guid": "83d406e0b9b20133e40c406c8f31e210",' +
+//              '"created_at": "2016-02-20T03:46:57.955Z",' +
+//              '"post_type": "StatusMessage",' +
+//              '"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a di.",' +
+//              '"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.",' +
+//              '"provider_display_name": "ExampleApp",' +
+//              '"public": true,' +
+//              '"nsfw": false,' +
+//              '"author": {' +
+//                '"guid": "f50ffc00b188013355e3705681972339",' +
+//                '"diaspora_id": "alice@example.com",' +
+//                '"name": "Alice Testing",' +
+//                '"avatar": ""' +
+//              '},' +
+//              '"interaction_counters": {' +
+//                '"comments": 14,' +
+//                '"likes": 42,' +
+//                '"reshares": 9' +
+//              '}' +
+//            '}';
+//        var example_post = JSON.parse(json_example_post_text);
+//        var i;
 
-        for (i = 0; i < 20; i++) {
-            postList.add_post(example_post);
-        }
+//        for (i = 0; i < 20; i++) {
+//            postList.add_post(example_post);
+//        }
     }
 }
-
-/*##^##
-Designer {
-    D{i:0;autoSize:true;height:480;width:640}
-}
-##^##*/

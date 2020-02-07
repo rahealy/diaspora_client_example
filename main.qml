@@ -12,15 +12,7 @@ ApplicationWindow {
     height: 480
     title: qsTr("Diaspora Client Example")
 
-    property var dapi: ({});
-
     DiasporaClientExample {
         anchors.fill: parent
-    }
-
-    Component.onCompleted: {
-//        redirectListener.listening = true;
-//        DiasporaAPI.V1.call(applicationWindow.dapi);
-//        dapi.set_pod('http://192.168.56.101:3000');
     }
 }

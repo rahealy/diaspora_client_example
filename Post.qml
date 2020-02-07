@@ -36,21 +36,33 @@ Page {
                 Rectangle {
                     id: authorAvatarRectangle
                     width: authorNameLabel.contentWidth
-                    height: 52
+                    height: 54
                     color: 'transparent'
-                    border.color: 'white'
-                    border.width: 2
 
-                    Text {
-                        text: 'No Image'
+                    Rectangle {
+                        width: 52
+                        height: width
+                        clip: true
+                        color: 'transparent'
+                        border.color: 'white'
+                        border.width: 2
                         anchors.centerIn: parent
-                    }
 
-                    Image {
-                        id: authorAvatarImage
-                        width: 50
-                        height: 50
-                        anchors.centerIn: parent
+                        Text {
+                            text: 'No Image'
+                            anchors.centerIn: parent
+                            rotation: -45
+                        }
+
+                        Image {
+                            id: authorAvatarImage
+                            width: parent.width - (parent.border.width * 2)
+                            height: parent.height - (parent.border.width * 2)
+                            source: author_avatar //provided by postListComponent in PostList.qml
+                            sourceSize.width: width
+                            sourceSize.height: height
+                            anchors.centerIn: parent
+                        }
                     }
                 }
 
@@ -95,6 +107,8 @@ Page {
                 text: qsTr("X")
             }
         }
+
+        Component.onCompleted: {}
     }
 
     Column {

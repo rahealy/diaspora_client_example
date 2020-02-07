@@ -9,5 +9,6 @@
         <file>diaspora_api.js</file>
         <file>DiasporaClientExample.qml</file>
         <file>Connect.qml</file>
+        <file>DialogBox.qml</file>
     </qresource>
 </RCC>
