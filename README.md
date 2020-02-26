@@ -16,7 +16,11 @@ A full fledged library and/or application and/or secure. While it definitely has
 
 ### Current
 
-**Thursday February 7, 2020 (Current)** - A few days turned into many days but here's a reasonably working example that meets most of my original goals. I'll call it an alpha release.
+**Wednesday February 26, 2020 (Current)**<b>&ast;</b> Now that there's a public server running the development version of the API with a valid SSL cert I intend to revisit this project in the next few days with the goal of updating the code to use HTTPS.
+
+<b>(&ast;)</b> Just a reminder that I'm actively looking for paid work either locally (Twin Cities, Minnesota, USA) or remotely. If you believe I could be of service to your organization or know of an organization that is looking for a dedicated employee comitted to a lifetime of learning and serving others please feel free to contact me through [LinkedIn](https://www.linkedin.com/in/richardarthurhealy/). Thank you so much.
+
+**Thursday February 7, 2020** - A few days turned into many days but here's a reasonably working example that meets most of my original goals. I'll call it an alpha release.
 
 
 ### References
