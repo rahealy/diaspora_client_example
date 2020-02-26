@@ -20,6 +20,8 @@ A full fledged library and/or application and/or secure. While it definitely has
 
 <b>(&ast;)</b> Just a reminder that I'm actively looking for paid work either locally (Twin Cities, Minnesota, USA) or remotely. If you believe I could be of service to your organization or know of an organization that is looking for a dedicated employee comitted to a lifetime of learning and serving others please feel free to contact me through [LinkedIn](https://www.linkedin.com/in/richardarthurhealy/). Thank you so much.
 
+### Older
+
 **Thursday February 7, 2020** - A few days turned into many days but here's a reasonably working example that meets most of my original goals. I'll call it an alpha release.
 
 
@@ -61,7 +63,7 @@ Rather than fuss around with a bunch of system dependencies I installed Qt from 
 <img src="diapsora_client_example.jpg" alt="image of diaspora client example ui." height="521" width="369"/>
 
 
-### Older
+### Older Still
 
 **Day Three Design Goals**
 
